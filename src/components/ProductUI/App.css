@@ -1,0 +1,274 @@
+*{    
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.market-root{
+  width: 100%;
+  height: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+.market-splash{    
+  background-color: #67a2e6;
+  text-align: center;
+  height: 100%;
+  font-size: 70px;
+  color: #fff;
+  width: 100%;
+}
+
+.market-left{
+  width: 20%;
+  background-color: #ffffff;     
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky; 
+  z-index: 1;
+  top:0;
+  box-shadow: rgba(68, 67, 67, 0.1) 0 3px 20px;
+  text-align: center;
+  font-size: 25px;
+  color: #333;
+  float: left;
+}
+
+.market-center{ 
+  width: 80%;
+  background-color: #ffffff; 
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 5px 40px;
+  top: 0;
+  height: auto;
+   
+}
+
+
+/* .market-right{
+  background-color: rgb(230, 177, 177);
+  grid-area: 8/10/span 8/span 3;
+  display: grid;
+  place-items: center;
+  position: sticky;
+} */
+
+.card {
+  width: 25%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #f3f0f0;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 3%;
+  font-size: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+.card:hover {
+  box-shadow: 1px 1px 3px 3px #f7f5f5;
+}
+
+/* .card:hover img{
+  border-bottom: 0.1em solid #b4bec9;
+} */
+
+.card:hover button{
+  background-color: #eeeeee;
+  /* border: #eeeeee; */
+  color: #303841;
+}
+
+.card img {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  padding: 0.6%;
+  display: inline–block;
+  float: left; 
+}
+
+.footer{
+  background-color: #333;
+  color:#fff;
+  height: auto;
+  padding: 10px;
+  width: 100%;
+}
+.footer h2{
+  text-align: center;
+  font-size: 20px;
+}
+
+.contactSellerBtn{
+  background-color: #eae8f3; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 40px;;
+}
+
+.button4{
+  background-color: white;
+  color: black;
+  border: 1px solid #f3f0f0;
+}
+
+/* product loader css */
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left:500px;
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgb(61, 55, 55);
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5; 
+    }
+  }
+  
+  /* Mobile and tablet */
+@media screen and (max-width: 768px) {
+  .market-splash{    
+  background-color: #67a2e6;
+  text-align: center;
+  height: 100%;
+  font-size: 1em;
+  color: #fff;
+  width: 100vw;
+  }
+
+  .market-left{
+  width: 30%;
+  padding-top: 10px;
+  background-color: #ffffff;     
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky; 
+  z-index: 1;
+  top:0;
+  box-shadow: rgba(68, 67, 67, 0.1) 0 3px 10px;
+  text-align: center;
+  font-size: 1em;
+  color: #333;
+  float: left;
+}
+
+  .market-center{ 
+  width: 70%;
+  background-color: #ffffff; 
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 5px 5px;
+  top: 0;
+  height: auto;
+    
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #f3f0f0;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 3%;
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    
+  }
+
+  .card:hover {
+    box-shadow: 1px 1px 3px 3px #d6d6d6;
+  }
+
+  .card:hover button{
+      background-color: #eeeeee;
+      color: #303841;
+  }
+
+  .card img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    padding: 0.6%;
+    display: inline–block;
+    float: left; 
+  }
+}
+
